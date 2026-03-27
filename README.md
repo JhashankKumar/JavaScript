@@ -17,8 +17,8 @@ This repository documents my commitment to mastering **JavaScript from fundament
 ## 🗓️ Challenge Timeline
 
 - **Duration:** 40 Days  
-- **Start Date:** [Add Date]  
-- **End Date:** [Add Date]  
+- **Start Date:** 26/03/2026  
+- **End Date:** 05/05/2026  
 
 ---
 
