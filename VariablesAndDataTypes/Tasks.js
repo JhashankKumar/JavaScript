@@ -91,3 +91,68 @@ console.log(favoriteMovie3);
 console.log(typeof favoriteMovie1);
 console.log(typeof favoriteMovie2);
 console.log(typeof favoriteMovie3);
+
+// object creation
+const person1 = {
+    name: "Alice",
+    age: 28,
+    isStudent: false,
+    favoriteColor: "Purple",
+    favoriteFood: "Pasta",
+    hobby: "Painting",
+    favoriteMovie: "The Shawshank Redemption"
+};
+
+let person2 = {
+    name: "Bob",
+    age: 22,
+    isStudent: true,
+    favoriteColor: "Yellow",
+    favoriteFood: "Tacos",
+    hobby: "Gaming",
+    favoriteMovie: "The Dark Knight",
+    modify : {
+        changeName: function(newName) {
+            this.name = newName;
+        },
+        changeAge: function(newAge) {
+            this.age = newAge;
+        },
+        changeIsStudent: function changeIsStudent(newIsStudent) {
+            this.isStudent = newIsStudent;
+        },
+        changeFavoriteColor: function changeFavoriteColor(newFavoriteColor) {
+            this.favoriteColor = newFavoriteColor;
+        },
+        changeFavoriteFood:(newFavoriteFood) => {
+            this.favoriteFood = newFavoriteFood;
+        },
+        changeHobby: (newHobby) => {
+            this.hobby = newHobby;
+        },
+        changeFavoriteMovie: function(newFavoriteMovie) {
+            this.favoriteMovie = newFavoriteMovie;
+        }   
+    }
+};
+
+//explain the difference between functions changeName, changeIsStudent and changeFavoriteFood in person2 object
+// changeName and changeIsStudent are regular functions, so they have their own 'this' context, which refers to the person2 object. 
+// changeFavoriteFood is an arrow function, so it does not have its own 'this' context and inherits 'this' from the surrounding scope, which is not the person2 object. 
+// Therefore, changeFavoriteFood will not work as expected when trying to modify the person2 object.
+// what will happen if we call changeFavoriteFood function of person2 object?
+// If we call changeFavoriteFood function of person2 object, it will not modify the favoriteFood property of person2 object because it is an arrow function and does not have its own 'this' context. 
+// Instead, it will try to modify the favoriteFood property of the global object (window in browsers), which is not what we want.
+// person2.modify.changeFavoriteFood("Sushi"); // This will not work as expected
+
+//logs of person1 and person2 objects
+console.log("logs of person1 and person2 objects:");
+console.log(person1);
+console.log(person2);
+person2.modify.changeName("Charlie");
+person2.modify.changeFavoriteFood("Sushi");
+console.log("logs of person2 object after modifications:");
+console.log(person2);
+
+// console.log(typeof person1);
+// console.log(typeof person2);
