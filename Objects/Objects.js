@@ -282,7 +282,7 @@ const myObj = {
 };
 
 const myArr = Object.entries(myObj);
-console.log(myArr)
+console.log(myArr);
 
 // array to object
 const myObj2 = Object.fromEntries([
@@ -311,7 +311,15 @@ const objEntries = Object.fromEntries(entries)
 console.log(objEntries);
 console.log(objEntries instanceof Object) // true
 
+// freeze
+/* Object.freeze() is a static method that freezes an object, preventing new properties from being added to it, 
+existing properties from being removed, and existing properties from being changed. */
+/* When an object is frozen, it becomes immutable, meaning that its properties cannot be modified in any way.
+This can be useful for creating objects that should not be changed, such as configuration objects or constants. */
+/* Object.freeze() only works on the object itself and does not affect any nested objects. 
+If the object contains nested objects, those nested objects can still be modified unless they are also frozen. */
 
+console.log("Object.freeze() example");
 const emp = {
     sal: 100
 }
@@ -320,13 +328,40 @@ Object.freeze(emp);
 
 emp.sal = 200;
 emp.name = "Alex";
-delete emp.sal;
+delete emp.sal; // cannot delete the sal property because the object is frozen
 
-console.log(emp)
+console.log(emp);
 
 console.log(Object.isFrozen(emp));
 
+console.log("Object.freeze() with nested objects example");
+const emp2 = {
+    name: "Bob",
+    address: {
+        city: "Bangalore",
+        state: "Karnataka",
+        country: "India"
+    }
+}
 
+Object.freeze(emp2);
+console.log(emp2);
+
+emp2.name = "Alice";
+emp2.address.city = "Mumbai";
+emp2.address.zip = 560001;
+
+console.log(emp2);
+
+// seal
+/* Object.seal() is a static method that seals an object, preventing new properties from being 
+added to it and marking all existing properties as non-configurable. However, it still allows existing 
+properties to be modified. */
+/* When an object is sealed, you cannot add new properties to it or delete existing properties, 
+but you can still modify the values of existing properties. */
+/* Object.seal() only works on the object itself and does not affect any nested objects. 
+If the object contains nested objects, those nested objects can still be modified unless they are also sealed. */
+console.log("Object.seal() example");
 const dept = {
     name: "finance"
 }
@@ -334,10 +369,32 @@ const dept = {
 Object.seal(dept);
 
 dept.address = "Bangalore"
-delete dept.name;
+delete dept.name; // cannot delete the name property because the object is sealed
 
 dept.name = "HR"
-console.log(dept)
+console.log(dept);
 
 console.log(Object.hasOwn(dept, "address"))
+
+console.log("Is object sealed?", Object.isSealed(dept))
+
+console.log("Object.seal() with nested objects example");
+const dept2 = {
+    name: "finance",
+    address: {
+        city: "Bangalore",
+        state: "Karnataka",
+        country: "India"
+    }
+}
+
+Object.seal(dept2);
+console.log(dept2);
+
+dept2.name = "HR";
+dept2.address.city = "Mumbai";
+dept2.address.zip = 560001;
+
+console.log(dept2);
+
 
