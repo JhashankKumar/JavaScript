@@ -51,18 +51,22 @@ try {
 
 try {
     console.log("execution starts here");
-    abc;
+    abc; // ReferenceError: abc is not defined
     console.log("execution ends here");
 } catch (err) {
     console.error("An Error has occured");
 
+    // Error object has three important properties: name, message and stack
+    // name - type of error
+    // message - details about the error
+    // stack - stack trace of the error
     console.log(err.name)
     console.log(err.message)
     console.log(err.stack)
 }
 
 // Real-World Use Cases
-
+// 1. Handling Math Errors
 function divideNumbers(a, b) {
     try {
         if (b === 0) {
@@ -78,6 +82,7 @@ function divideNumbers(a, b) {
 divideNumbers(15, 3);
 // divideNumbers(15, 0);
 
+// 2. Handling Property Access Errors
 const person = {
     name: "Tapas",
     address: {
@@ -93,10 +98,26 @@ function getPostalCode(user) {
     }
 }
 
-// getPostalCode(person);
+// getPostalCode(person); // TypeError: Cannot read properties of undefined (reading 'postalCode')
 
+// 3. Handling JSON Parsing Errors
+const jsonString = '{"name": "Tapas", "age": 30}'; // valid JSON
+const invalidJsonString = '{"name": "Tapas", "age": 30'; // invalid JSON
 
+function parseUserData(json) {
+    try {
+        const userData = JSON.parse(json);
+        console.log("User Data:", userData);
+    } catch (error) {
+        console.error("JSON Parsing Error:", error.message);
+    }
+}
 
+// parseUserData(jsonString);
+// parseUserData(invalidJsonString);
+
+// Throwing Error - we can create our own error and throw it when a certain condition is met.
+// throw keyword is used to throw an error. It can be used to throw built-in errors or custom errors.
 function validateAge(age) {
     try {
         if (isNaN(age)) {
