@@ -185,10 +185,10 @@ function processInformation(information) {
 function ValidationError(message) {
     this.name = "ValidationError";
     this.message = message;
-    //this.stack = new Error().stack;
+    this.stack = new Error().stack;
 }
 
-//ValidationError.prototype = Object.create(Error.prototype);
+ValidationError.prototype = Object.create(Error.prototype);
 
 function validateCitizen(age) {
     if (age < 60) {
