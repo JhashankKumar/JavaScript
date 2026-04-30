@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="index.js"></script>
-    <title>Document</title>
+    <title>JavaScript Arrays</title>
 </head>
 <body>
+    <h1>JavaScript Arrays</h1>
+    <p>An <strong>array</strong> is an ordered list of values. Each slot has a numeric index starting at 0. Arrays can hold any mix of types (numbers, strings, objects, and so on). Many methods either change the array in place (mutable) or return a new array without changing the original (immutable).</p>
+
+    <h2>Creating Arrays</h2>
+    <ul>
+        <li><strong>Array literal:</strong> <code>const fruits = ["apple", "banana", "cherry"];</code></li>
+        <li><strong>Array constructor:</strong> <code>const numbers = new Array(1, 2, 3);</code></li>
+    </ul>
+
+    <h2>Getting Elements</h2>
+    <ul>
+        <li><strong>By index:</strong> <code>fruits[0]</code> returns the first element (e.g. <code>"apple"</code>).</li>
+        <li><strong>With <code>.at()</code>:</strong> <code>fruits.at(-1)</code> counts from the end (last element).</li>
+    </ul>
+
+    <h2>Adding Elements</h2>
+    <ul>
+        <li><strong><code>push(value)</code>:</strong> Appends to the end. <strong>Mutable</strong> — changes the original array.</li>
+        <li><strong><code>unshift(value)</code>:</strong> Inserts at the start. <strong>Mutable</strong>.</li>
+    </ul>
+
+    <h2>Removing Elements</h2>
+    <ul>
+        <li><strong><code>pop()</code>:</strong> Removes and returns the last element. <strong>Mutable</strong>.</li>
+        <li><strong><code>shift()</code>:</strong> Removes and returns the first element. <strong>Mutable</strong>.</li>
+        <li><strong><code>splice(index, count)</code>:</strong> Removes (or replaces) elements at a given index. <strong>Mutable</strong>.</li>
+    </ul>
+
+    <h2>Copying and Cloning</h2>
+    <ul>
+        <li><strong><code>slice()</code>:</strong> <code>const copy = fruits.slice()</code> — shallow copy; original unchanged.</li>
+        <li><strong>Spread:</strong> <code>const copy = [...fruits]</code> — new array; original unchanged.</li>
+    </ul>
+
+    <h2>Mutable vs Immutable Patterns</h2>
+    <ul>
+        <li><strong>Mutable (in place):</strong> <code>push</code>, <code>pop</code>, <code>shift</code>, <code>unshift</code>, <code>splice</code> — they modify the same array reference.</li>
+        <li><strong>Immutable-style (new array):</strong> <code>slice</code>, <code>concat</code>, spread <code>[...arr]</code> — return a new array; the original is left as it was.</li>
+    </ul>
+
+    // Deletermining Elements
+    <h2>Determining Elements</h2>
+    <ul>
+        <li><strong><code>indexOf(value)</code>:</strong> Returns the index of the first occurrence of a value, or -1 if not found.</li>
+        <li><strong><code>includes(value)</code>:</strong> Returns true if the array contains the value, false otherwise.</li>
+    </ul>   
     
+    // Deletermining Array
+    <h2>Determining if a Value is an Array</h2>
+    <ul>
+        <li><strong><code>Array.isArray(value)</code>:</strong> Returns true if the value is an array, false otherwise.</li>
+    </ul>
+
+    //Nested Arrays
+    <h2>Nested Arrays</h2>
+    <p>Arrays can contain other arrays, creating a nested structure. We can access elements in nested arrays using multiple indices.</p>
+    <ul>
+        <li><strong>Accessing Nested Elements:</strong> <code>const matrix = [[1, 2], [3, 4]];</code> Access the number 3 with <code>matrix[1][0]</code>.</li>
+        <li><strong>Multi-dimensional Arrays:</strong> We can create arrays with more than two levels of nesting, such as <code>const cube = [[[1], [2]], [[3], [4]]];</code> Access the number 4 with <code>cube[1][1][0]</code>.</li>
+    </ul>
+
+    // Array Destructuring
+    <h2>Array Destructuring</h2>
+    <p>Array destructuring allows us to unpack values from arrays into distinct variables.</p>
+    <ul>
+        <li><strong>Basic Destructuring:</strong> <code>const [a, b] = [1, 2];</code> assigns 1 to a and 2 to b.</li>
+        <li><strong>Default Values:</strong> <code>const [a, b = 10] = [1];</code> assigns 1 to a and 10 to b (since the second value is missing).</li>
+        <li><strong>Skipping Values:</strong> <code>const [a, , c] = [1, 2, 3];</code> assigns 1 to a and 3 to c, skipping the second value.</li>
+        <li><strong>Rest:</strong> <code>const [a, ...rest] = [1, 2, 3, 4];</code> assigns 1 to a and [2, 3, 4] to rest.</li>
+        <li><strong>Spread:</strong> <code>const arr1 = [1, 2]; const arr2 = [...arr1, 3, 4];</code> creates arr2 as [1, 2, 3, 4].</li> 
+        <li><strong>Swapping:</strong> <code>[a, b] = [b, a];</code> swaps the values of a and b.</li>
+    </ul>
+
+    // Swapping
+    <h2>Swapping Variables</h2>
+    <p>We can swap the values of two variables using destructuring assignment.</p>
+    <ul>
+        <li><strong>Swapping:</strong> <code>[a, b] = [b, a];</code> swaps the values of a and b.</li>
+    </ul>
+
+    // Merging Arrays
+    <h2>Merging Arrays</h2>
+    <p>We can merge two arrays using the spread operator.</p>
+    <ul>    
+        <li><strong>Merging:</strong> <code>const merged = [...arr1, ...arr2];</code> creates a new array that combines arr1 and arr2.</li>
+    </ul> 
+
+    // Length of an Array
+    <h2>Length of an Array</h2>
+    <p>The length property of an array returns the number of elements in the array. It is a read-only property that is automatically updated when elements are added or removed from the array. The length of an array is always one more than the highest index in the array. If you set the length property to a value less than the current length, it will truncate the array and remove elements from the end. If you set it to a value greater than the current length, it will create new empty slots at the end of the array.</p>
+    <ul>
+        <li><strong>Length:</strong> <code>const arr = [1, 2, 3]; console.log(arr.length);</code> outputs 3.</li>
+        <li><strong>Truncating:</strong> <code>arr.length = 2;</code> changes arr to [1, 2].</li>
+        <li><strong>Extending:</strong> <code>arr.length = 5;</code> changes arr to [1, 2, <empty>, <empty>, <empty>].</code></li>
+    </ul> 
+
+    // Array Limit
+    <h2>Array Limit</h2>
+    <p>2 ** 32 - 1 is the maximum length of an array in JavaScript. This is because the length property of an array is a 32-bit unsigned integer, which can represent values from 0 to 2^32 - 1. If you try to set the length of an array to a value greater than this, it will throw a RangeError.</p>
+    <ul>
+        <li><strong>Maximum Length:</strong> <code>const arr = new Array(2 ** 32 - 1);</code> creates an array with the maximum length.</li>
+        <li><strong>Exceeding Limit:</strong> <code>arr.length = 2 ** 32;</code> throws a RangeError.</li>
+    </ul>
 </body>
 </html>
