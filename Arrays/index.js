@@ -144,13 +144,16 @@ console.log("Day 15: JavaScript Array Master Course");
     const carrot = salad[5];
 }
 
-
+// Destructuring Assignment
 {
     const salad = ["tomato", "mushroom", "broccoli", "cucumber", "corn", "carrot", "avocado"];
     const [tomato, mushroom, carrot] =  ['tomato', 'mushroom', 'carrot'];
     console.log(tomato, mushroom, carrot);
 }
 
+// Default Values
+/* If the value is not present in the array, it will be undefined. 
+We can assign a default value to the variable in case the value is undefined.*/
 {
     const [tomato, mushroom = 'mushroom'] = ['tomato'];
 
@@ -158,6 +161,8 @@ console.log("Day 15: JavaScript Array Master Course");
     console.log(mushroom ); // 'mushroom'
 }
 
+// Skipping Values
+/* If we want to skip a value in the array, we can use a comma (,) to skip that value.*/
 {
     const [tomato, ,carrot] = ['tomato', 'mushroom', 'carrot'];
 
@@ -180,21 +185,25 @@ fruits[4][2]; // '🥕'
 
 }
 
+
 // Rest and Spread
+/* The rest operator is used to collect the remaining elements of an array into a new array. 
+The spread operator is used to spread the elements of an array into a new array or function arguments. */  
 // ...
 {
-const [tomato, mashroom, ...rest] =  ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
+const [tomato, mushroom, ...rest] =  ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
 console.log(rest);
 
 const mySalad = ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑'];
-const mySaaladCopy = [...mySalad];
+const mySaladCopy = [...mySalad];
 
-console.log(mySaaladCopy); // ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"]
+console.log(mySaladCopy); // ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"]
 
-mySalad === mySaaladCopy; // false
+mySalad === mySaladCopy; // false
 }
 
 // Swapping
+// We can swap the values of two variables using destructuring assignment.
 {
 let first = '😔';
 let second = '🙂';
@@ -207,7 +216,7 @@ console.log(second); // '😔'
 
 
 // Merge
-
+// We can merge two arrays using the spread operator.
 {
 const emotions = ['🙂', '😔'];
 const veggies = ['🥦', '🥒', '🌽', '🥕'];
@@ -218,7 +227,11 @@ console.log(emotionalVeggies);
 }
 
 // length
-
+/* The length property of an array returns the number of elements in the array. 
+It is a read-only property that is automatically updated when elements are added or removed from the array. 
+The length of an array is always one more than the highest index in the array. If you set the length property 
+to a value less than the current length, it will truncate the array and remove elements from the end. 
+If you set it to a value greater than the current length, it will create new empty slots at the end of the array.*/
 {
 const arr1 = [11, 21, 73];
 const arr2 = new Array(7);
@@ -227,6 +240,13 @@ console.log(arr1.length); // 3
 console.log(arr2.length); // 7
 
 // 2 ** 32 - 1 // 4294967295
+/*
+2 ** 32 - 1 is the maximum length of an array in JavaScript. This is because the length property of an array 
+is a 32-bit unsigned integer, which can represent values from 0 to 2^32 - 1. If you try to set the length
+of an array to a value greater than this, it will throw a RangeError.
+*/
+
+// arr1.length = 5; // [11, 21, 73, empty x 2]
 
 arr1.length = 9
 console.log(arr1)
