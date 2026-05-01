@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="Task.js"></script>
-    <title>Document</title>
+    <title>Control Flow in JavaScript</title>
 </head>
 <body>
+    <h1>Control Flow in JavaScript</h1>
+    <p><strong>Control flow</strong> refers to the order in which individual statements, instructions, or function calls are executed or evaluated in a programming language. In JavaScript, control flow is determined by various constructs such as conditionals, loops, and function calls.</p>
+
+    <h2>Conditional Statements</h2>
+    <ul>
+        <li><strong><code>if</code> statement:</strong> Executes a block of code if a specified condition is true.</li>
+        <li><strong><code>else</code> statement:</strong> Executes a block of code if the condition in the <code>if</code> statement is false.</li>
+        <li><strong><code>else if</code> statement:</strong> Specifies a new condition to test if the previous condition was false.</li>
+        <li><strong><code>switch</code> statement:</strong> Evaluates an expression and executes code based on matching cases.</li>
+    </ul>
+
+    <h2>Loops</h2>
+    <ul>
+        <li><strong><code>for</code> loop:</strong> Repeats a block of code a specified number of times.</li>
+        <li><strong><code>while</code> loop:</strong> Repeats a block of code as long as a specified condition is true.</li>
+        <li><strong><code>do...while</code> loop:</strong> Similar to the while loop but guarantees that the block of code will be executed at least once.</li>
+    </ul>
+
+    <h2>Function Calls</h2>
+    <p>A function call is an expression that passes control to a function. When a function is called, the program execution jumps to the function's body, executes it, and then returns control back to the point where the function was called.</p>
+    <h2>Short-Circuit Evaluation</h2>
+    <p>In JavaScript, logical operators such as <code>&&</code> (AND) and <code>||</code> (OR) use short-circuit evaluation. This means that in an expression, evaluation stops as soon as the result is determined. For example, in the expression <code>true || false</code>, the evaluation will stop after evaluating the first operand since it is already true, and the second operand will not be evaluated.</p>
     
+    <h2>Exception Handling</h2>
+    <p>JavaScript provides a mechanism for handling exceptions using <code>try...catch</code> blocks. The code inside the <code>try</code> block is executed, and if an error occurs, control is transferred to the <code>catch</code> block where the error can be handled gracefully. Additionally, a <code>finally</code> block can be used to execute code that should run regardless of whether an error occurred or not.</p>  
+    <pre><code>
 </body>
 </html>
