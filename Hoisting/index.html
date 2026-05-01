@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoisting</title>
+  </head>
+  <body>
+    <h1>Hoisting in JavaScript</h1>
+    <p>
+      <strong>Hoisting</strong> is a JavaScript mechanism where variable and
+      function declarations are moved to the top of their containing scope
+      during the compilation phase. This means that you can use variables and
+      functions before they are declared in the code. However, only the
+      declarations are hoisted, not the initializations.
+    </p>
+    <h2>Variable Hoisting</h2>
+    <p>
+      When you declare a variable using <code>var</code>, it is hoisted to the
+      top of its scope and initialized with <code>undefined</code>. This can
+      lead to unexpected behavior if you try to access the variable before its
+      declaration.
+    </p>
+    <pre><code>
+console.log(x); // Output: undefined
+var x = 5;
+console.log(x); // Output: 5
+    </code></pre>
+    <p>
+      In contrast, variables declared with <code>let</code> and
+      <code>const</code> are also hoisted, but they are not initialized until
+      their declaration is evaluated. This means that accessing them before
+      their declaration will result in a <code>ReferenceError</code>.
+    </p>
+    <pre><code>
+console.log(y); // ReferenceError: Cannot access 'y' before initialization
+let y = 10;
+console.log(y); // Output: 10
+    </code></pre>
+    <h2>Function Hoisting</h2>
+    <p>
+      Function declarations are fully hoisted, meaning you can call the function
+      before its declaration in the code.
+    </p>
+    <pre><code>
+greet(); // Output: "Hello, World!"
+function greet() {
+    console.log("Hello, World!");
+}
+    </code></pre>
+    <p>
+      However, function expressions (where a function is assigned to a variable)
+      are not hoisted in the same way. If you try to call a function expression
+      before it is defined, you will get a <code>TypeError</code>.
+    </p>
+    <pre><code>
+sayHello(); // TypeError: sayHello is not a function
+var sayHello = function() {
+    console.log("Hello!");
+};
+    </code></pre>
+    <h2>Best Practices</h2>
+    <ul>
+      <li>
+        Always declare variables at the top of their scope to avoid confusion
+        caused by hoisting.
+      </li>
+      <li>
+        Use <code>let</code> and <code>const</code> instead of
+        <code>var</code> to prevent issues related to variable hoisting and to
+        take advantage of block scoping.
+      </li>
+      <li>
+        Be cautious when using function expressions, as they are not hoisted in
+        the same way as function declarations.
+      </li>
+    </ul>
+  </body>
+</html>
