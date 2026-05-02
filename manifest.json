@@ -1,0 +1,763 @@
+{
+  "generatedAt": "2026-05-02T07:13:50.986Z",
+  "tree": {
+    "name": ".",
+    "path": "",
+    "dirs": [
+      {
+        "name": "Arrays",
+        "path": "Arrays",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "Arrays/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "index.js",
+            "path": "Arrays/index.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "Arrays/README.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "Closure",
+        "path": "Closure",
+        "dirs": [],
+        "files": [
+          {
+            "name": "Closures.js",
+            "path": "Closure/Closures.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "Closure/README.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "ControlFlow",
+        "path": "ControlFlow",
+        "dirs": [],
+        "files": [
+          {
+            "name": "ControlFlow.js",
+            "path": "ControlFlow/ControlFlow.js",
+            "ext": "js"
+          },
+          {
+            "name": "index.html",
+            "path": "ControlFlow/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "README.md",
+            "path": "ControlFlow/README.md",
+            "ext": "md"
+          },
+          {
+            "name": "Task.js",
+            "path": "ControlFlow/Task.js",
+            "ext": "js"
+          }
+        ]
+      },
+      {
+        "name": "ErrorHandling",
+        "path": "ErrorHandling",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "ErrorHandling/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "index.js",
+            "path": "ErrorHandling/index.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "ErrorHandling/README.md",
+            "ext": "md"
+          },
+          {
+            "name": "Task.js",
+            "path": "ErrorHandling/Task.js",
+            "ext": "js"
+          },
+          {
+            "name": "TASK.md",
+            "path": "ErrorHandling/TASK.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "ExecutionContext",
+        "path": "ExecutionContext",
+        "dirs": [
+          {
+            "name": "CallStack",
+            "path": "ExecutionContext/CallStack",
+            "dirs": [],
+            "files": [
+              {
+                "name": "CallStack.js",
+                "path": "ExecutionContext/CallStack/CallStack.js",
+                "ext": "js"
+              }
+            ]
+          },
+          {
+            "name": "FunctionExecutionContext",
+            "path": "ExecutionContext/FunctionExecutionContext",
+            "dirs": [],
+            "files": [
+              {
+                "name": "FunctionExecutionContext.js",
+                "path": "ExecutionContext/FunctionExecutionContext/FunctionExecutionContext.js",
+                "ext": "js"
+              }
+            ]
+          },
+          {
+            "name": "GlobalExecutionContext",
+            "path": "ExecutionContext/GlobalExecutionContext",
+            "dirs": [],
+            "files": [
+              {
+                "name": "GlobalExecutionContext.js",
+                "path": "ExecutionContext/GlobalExecutionContext/GlobalExecutionContext.js",
+                "ext": "js"
+              }
+            ]
+          }
+        ],
+        "files": []
+      },
+      {
+        "name": "Functions",
+        "path": "Functions",
+        "dirs": [],
+        "files": [
+          {
+            "name": "Functions.js",
+            "path": "Functions/Functions.js",
+            "ext": "js"
+          },
+          {
+            "name": "index.html",
+            "path": "Functions/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "Task.js",
+            "path": "Functions/Task.js",
+            "ext": "js"
+          },
+          {
+            "name": "TASK.md",
+            "path": "Functions/TASK.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "Hoisting",
+        "path": "Hoisting",
+        "dirs": [],
+        "files": [
+          {
+            "name": "Hoisting.js",
+            "path": "Hoisting/Hoisting.js",
+            "ext": "js"
+          },
+          {
+            "name": "index.html",
+            "path": "Hoisting/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "practice.js",
+            "path": "Hoisting/practice.js",
+            "ext": "js"
+          },
+          {
+            "name": "TDZ.js",
+            "path": "Hoisting/TDZ.js",
+            "ext": "js"
+          }
+        ]
+      },
+      {
+        "name": "IO",
+        "path": "IO",
+        "dirs": [],
+        "files": [
+          {
+            "name": "DataStructure.js",
+            "path": "IO/DataStructure.js",
+            "ext": "js"
+          },
+          {
+            "name": "index.html",
+            "path": "IO/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "index.js",
+            "path": "IO/index.js",
+            "ext": "js"
+          }
+        ]
+      },
+      {
+        "name": "LoopsAndIterators",
+        "path": "LoopsAndIterators",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "LoopsAndIterators/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "LoopsAndIterators.js",
+            "path": "LoopsAndIterators/LoopsAndIterators.js",
+            "ext": "js"
+          },
+          {
+            "name": "Patterns.js",
+            "path": "LoopsAndIterators/Patterns.js",
+            "ext": "js"
+          },
+          {
+            "name": "Task.js",
+            "path": "LoopsAndIterators/Task.js",
+            "ext": "js"
+          },
+          {
+            "name": "TASK.md",
+            "path": "LoopsAndIterators/TASK.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "Objects",
+        "path": "Objects",
+        "dirs": [],
+        "files": [
+          {
+            "name": "Destructuring.js",
+            "path": "Objects/Destructuring.js",
+            "ext": "js"
+          },
+          {
+            "name": "index.html",
+            "path": "Objects/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "Objects.js",
+            "path": "Objects/Objects.js",
+            "ext": "js"
+          },
+          {
+            "name": "OptionalChaining.js",
+            "path": "Objects/OptionalChaining.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "Objects/README.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "OperatorsAndExpressions",
+        "path": "OperatorsAndExpressions",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "OperatorsAndExpressions/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "OperatorsAndExpressions.js",
+            "path": "OperatorsAndExpressions/OperatorsAndExpressions.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "OperatorsAndExpressions/README.md",
+            "ext": "md"
+          },
+          {
+            "name": "Task.js",
+            "path": "OperatorsAndExpressions/Task.js",
+            "ext": "js"
+          }
+        ]
+      },
+      {
+        "name": "Projects",
+        "path": "Projects",
+        "dirs": [
+          {
+            "name": "RockPaperScissors",
+            "path": "Projects/RockPaperScissors",
+            "dirs": [],
+            "files": [
+              {
+                "name": "index.html",
+                "path": "Projects/RockPaperScissors/index.html",
+                "ext": "html"
+              },
+              {
+                "name": "RockPaperScissors.js",
+                "path": "Projects/RockPaperScissors/RockPaperScissors.js",
+                "ext": "js"
+              }
+            ]
+          },
+          {
+            "name": "SecretNumber",
+            "path": "Projects/SecretNumber",
+            "dirs": [],
+            "files": [
+              {
+                "name": "index.html",
+                "path": "Projects/SecretNumber/index.html",
+                "ext": "html"
+              },
+              {
+                "name": "SecretNumber.js",
+                "path": "Projects/SecretNumber/SecretNumber.js",
+                "ext": "js"
+              }
+            ]
+          }
+        ],
+        "files": []
+      },
+      {
+        "name": "Scope",
+        "path": "Scope",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "Scope/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "practice.js",
+            "path": "Scope/practice.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "Scope/README.md",
+            "ext": "md"
+          },
+          {
+            "name": "Scope.js",
+            "path": "Scope/Scope.js",
+            "ext": "js"
+          }
+        ]
+      },
+      {
+        "name": "this KeyWord",
+        "path": "this KeyWord",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "this KeyWord/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "index.js",
+            "path": "this KeyWord/index.js",
+            "ext": "js"
+          },
+          {
+            "name": "README.md",
+            "path": "this KeyWord/README.md",
+            "ext": "md"
+          },
+          {
+            "name": "sample.js",
+            "path": "this KeyWord/sample.js",
+            "ext": "js"
+          },
+          {
+            "name": "TASK.md",
+            "path": "this KeyWord/TASK.md",
+            "ext": "md"
+          }
+        ]
+      },
+      {
+        "name": "VariablesAndDataTypes",
+        "path": "VariablesAndDataTypes",
+        "dirs": [],
+        "files": [
+          {
+            "name": "index.html",
+            "path": "VariablesAndDataTypes/index.html",
+            "ext": "html"
+          },
+          {
+            "name": "README.md",
+            "path": "VariablesAndDataTypes/README.md",
+            "ext": "md"
+          },
+          {
+            "name": "Task.js",
+            "path": "VariablesAndDataTypes/Task.js",
+            "ext": "js"
+          },
+          {
+            "name": "VariablesDataTypes.js",
+            "path": "VariablesAndDataTypes/VariablesDataTypes.js",
+            "ext": "js"
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "name": "index.html",
+        "path": "index.html",
+        "ext": "html"
+      },
+      {
+        "name": "README.md",
+        "path": "README.md",
+        "ext": "md"
+      }
+    ]
+  },
+  "files": [
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "ext": "html"
+    },
+    {
+      "name": "README.md",
+      "path": "README.md",
+      "ext": "md"
+    },
+    {
+      "name": "index.html",
+      "path": "Arrays/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "index.js",
+      "path": "Arrays/index.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "Arrays/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "Closures.js",
+      "path": "Closure/Closures.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "Closure/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "ControlFlow.js",
+      "path": "ControlFlow/ControlFlow.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "ControlFlow/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "README.md",
+      "path": "ControlFlow/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "Task.js",
+      "path": "ControlFlow/Task.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "ErrorHandling/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "index.js",
+      "path": "ErrorHandling/index.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "ErrorHandling/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "Task.js",
+      "path": "ErrorHandling/Task.js",
+      "ext": "js"
+    },
+    {
+      "name": "TASK.md",
+      "path": "ErrorHandling/TASK.md",
+      "ext": "md"
+    },
+    {
+      "name": "CallStack.js",
+      "path": "ExecutionContext/CallStack/CallStack.js",
+      "ext": "js"
+    },
+    {
+      "name": "FunctionExecutionContext.js",
+      "path": "ExecutionContext/FunctionExecutionContext/FunctionExecutionContext.js",
+      "ext": "js"
+    },
+    {
+      "name": "GlobalExecutionContext.js",
+      "path": "ExecutionContext/GlobalExecutionContext/GlobalExecutionContext.js",
+      "ext": "js"
+    },
+    {
+      "name": "Functions.js",
+      "path": "Functions/Functions.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "Functions/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "Task.js",
+      "path": "Functions/Task.js",
+      "ext": "js"
+    },
+    {
+      "name": "TASK.md",
+      "path": "Functions/TASK.md",
+      "ext": "md"
+    },
+    {
+      "name": "Hoisting.js",
+      "path": "Hoisting/Hoisting.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "Hoisting/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "practice.js",
+      "path": "Hoisting/practice.js",
+      "ext": "js"
+    },
+    {
+      "name": "TDZ.js",
+      "path": "Hoisting/TDZ.js",
+      "ext": "js"
+    },
+    {
+      "name": "DataStructure.js",
+      "path": "IO/DataStructure.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "IO/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "index.js",
+      "path": "IO/index.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "LoopsAndIterators/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "LoopsAndIterators.js",
+      "path": "LoopsAndIterators/LoopsAndIterators.js",
+      "ext": "js"
+    },
+    {
+      "name": "Patterns.js",
+      "path": "LoopsAndIterators/Patterns.js",
+      "ext": "js"
+    },
+    {
+      "name": "Task.js",
+      "path": "LoopsAndIterators/Task.js",
+      "ext": "js"
+    },
+    {
+      "name": "TASK.md",
+      "path": "LoopsAndIterators/TASK.md",
+      "ext": "md"
+    },
+    {
+      "name": "Destructuring.js",
+      "path": "Objects/Destructuring.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "Objects/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "Objects.js",
+      "path": "Objects/Objects.js",
+      "ext": "js"
+    },
+    {
+      "name": "OptionalChaining.js",
+      "path": "Objects/OptionalChaining.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "Objects/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "index.html",
+      "path": "OperatorsAndExpressions/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "OperatorsAndExpressions.js",
+      "path": "OperatorsAndExpressions/OperatorsAndExpressions.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "OperatorsAndExpressions/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "Task.js",
+      "path": "OperatorsAndExpressions/Task.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "Projects/RockPaperScissors/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "RockPaperScissors.js",
+      "path": "Projects/RockPaperScissors/RockPaperScissors.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "Projects/SecretNumber/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "SecretNumber.js",
+      "path": "Projects/SecretNumber/SecretNumber.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "Scope/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "practice.js",
+      "path": "Scope/practice.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "Scope/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "Scope.js",
+      "path": "Scope/Scope.js",
+      "ext": "js"
+    },
+    {
+      "name": "index.html",
+      "path": "this KeyWord/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "index.js",
+      "path": "this KeyWord/index.js",
+      "ext": "js"
+    },
+    {
+      "name": "README.md",
+      "path": "this KeyWord/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "sample.js",
+      "path": "this KeyWord/sample.js",
+      "ext": "js"
+    },
+    {
+      "name": "TASK.md",
+      "path": "this KeyWord/TASK.md",
+      "ext": "md"
+    },
+    {
+      "name": "index.html",
+      "path": "VariablesAndDataTypes/index.html",
+      "ext": "html"
+    },
+    {
+      "name": "README.md",
+      "path": "VariablesAndDataTypes/README.md",
+      "ext": "md"
+    },
+    {
+      "name": "Task.js",
+      "path": "VariablesAndDataTypes/Task.js",
+      "ext": "js"
+    },
+    {
+      "name": "VariablesDataTypes.js",
+      "path": "VariablesAndDataTypes/VariablesDataTypes.js",
+      "ext": "js"
+    }
+  ]
+}

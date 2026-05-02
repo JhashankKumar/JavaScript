@@ -106,6 +106,23 @@ By the end of this challenge, I aim to:
 
 ---
 
+## GitHub Pages (site map)
+
+This repo includes a static **explorer** at the root ([`index.html`](index.html)) that lists folders and `.md`, `.js`, and `.html` files from a generated [`manifest.json`](manifest.json).
+
+1. In the repository **Settings → Pages**, set **Source** to the `main` branch and folder **`/ (root)`** so lesson URLs like `Arrays/index.html` stay valid.
+2. After you add or rename folders or files, refresh the listing:
+
+   ```bash
+   node scripts/generate-manifest.mjs
+   ```
+
+3. Commit the updated `manifest.json` and push. Your site will be at `https://<your-username>.github.io/<repository-name>/` (replace with your GitHub user and repo name).
+
+The root [`.nojekyll`](.nojekyll) file disables Jekyll so all paths are served as plain static files.
+
+---
+
 ## 📢 Connect With Me
 
 - 💼 LinkedIn: [Add Link]  
