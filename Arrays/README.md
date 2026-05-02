@@ -1,7 +1,5 @@
 # Day 15 - 40 Days of JavaScript - JavaScript Array Master Course
 
-## **🎯 Goal of This Lesson**
-
 ## 📚 Course Flow
 
 - ✅ Introduction
@@ -63,15 +61,6 @@
     - ✅ The toSpliced() method
     - ✅ The with() method
 - ✅ Tasks and Quizzes With Interview Questions
-
-## 🫶 Support
-
-Your support means a lot.
-
-- Liked my work? It takes months of hard work to create quality content and present it to you. You can show your support to me with a STAR(⭐) to this repository.
-
-
-## **👩‍💻 🧑‍💻 Assignment Tasks**
 
 ## Array Method Mutability and Immutability Table
 
