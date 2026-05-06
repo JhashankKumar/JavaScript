@@ -254,6 +254,13 @@ console.log(arr1)
 }
 
 // concat()
+/* The concat() method is used to merge two or more arrays. 
+This method does not change the existing arrays, but instead returns a new array. 
+The concat() method can take any number of arguments, which can be arrays or values. 
+If the argument is an array, its elements will be added to the new array. 
+If the argument is a value, it will be added as a single element to the new array. */  
+
+// It will not change the existing arrays but instead returns a new array.(immutable)
 
 {
     const first = [1, 2, 3];
@@ -269,7 +276,14 @@ console.log(arr1)
     // array.concat(arr1, arr2,..,..,..,arrN);
 }
 
+
 // join()
+/* The join() method creates and returns a new string by concatenating all of the elements 
+in an array, separated by commas or a specified separator string. If the array has only one item, 
+then that item will be returned without using the separator. 
+If the array is empty, it will return an empty string. */
+
+// It will not change the existing array but instead returns a new string.(immutable)
 {
     const emotions = ["🙂", "😍", "🙄", "😟"];
 
@@ -280,13 +294,31 @@ console.log(arr1)
 }
 
 // fill()
+/* The fill() method fills all the elements of an array from a start index to an end index 
+with a static value. The fill() method changes the original array and returns the modified array. 
+The fill() method takes three arguments: the value to fill the array with, the start index (optional), 
+and the end index (optional). If the start index is not provided, it defaults to 0. 
+If the end index is not provided, it defaults to the length of the array. 
+The fill() method modifies the original array and returns it. */  
+
+// It will change the existing array and returns the modified array.(mutable)
 {
     const colors = ["red", "blue", "green"];
     colors.fill("pink", 1, 3);
     console.log(colors);
 }
 
+
 // includes()
+/* The includes() method determines whether an array includes a certain value among its entries, 
+returning true or false as appropriate. The includes() method takes two arguments: the value to 
+search for and an optional fromIndex. 
+The fromIndex argument specifies the index at which to start the search. If fromIndex is not 
+provided, it defaults to 0. 
+The includes() method returns true if the array contains the specified value, and false otherwise. 
+The includes() method uses strict equality (===) to compare the search value with the elements of the array. */ 
+
+// It will not change the existing array but instead returns a boolean value.(immutable)
 {
     const names = ["tom", "alex", "bob", "john"];
 
