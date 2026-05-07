@@ -158,6 +158,11 @@ complex scenarios. */
 }
 
 // Destructuring Assignment
+/* Destructuring assignment allows you to unpack values from arrays into distinct variables in a more concise way. 
+The syntax for array destructuring involves using square brackets [] on the left-hand side of the 
+assignment operator (=) to specify the variables that will receive the values from the array on the right-hand side. 
+The order of the variables in the destructuring assignment corresponds to the order of the elements in the array. 
+You can also use default values, skip values, and even nest destructuring assignments for more complex scenarios. */    
 {
     const salad = ["tomato", "mushroom", "broccoli", "cucumber", "corn", "carrot", "avocado"];
     const [tomato, mushroom, carrot] =  ['tomato', 'mushroom', 'carrot'];
@@ -187,6 +192,11 @@ We can assign a default value to the variable in case the value is undefined.*/
 // Nested Array
 
 // [1 ,2, [4, [6, 8, ['q']]]]
+/* We can use nested destructuring to unpack values from nested arrays. 
+The syntax for nested destructuring involves using square brackets [] on the left-hand side of the assignment 
+operator (=) to specify the variables that will receive the values from the nested array on the right-hand side. 
+The order of the variables in the destructuring assignment corresponds to the order of the elements in the nested array. 
+You can also use default values, skip values, and even nest destructuring assignments for more complex scenarios. */    
 {
 let fruits = ['🍈', '🍍', '🍌', '🍉', ['🍅', '🍄', '🥕']];
 const veg = fruits[4]; // ['🍅', '🍄', '🥕']
@@ -373,7 +383,12 @@ The includes() method uses strict equality (===) to compare the search value wit
     ];
 
     console.log("Default sorting of artists array", artists.sort());
+    //ascending order
+    
 
+    /* To sort in descending order, we can provide a compare function to the sort() method. The compare 
+    function takes two arguments and returns a negative value if the first argument should come before the 
+    second, a positive value if the first argument should come after the second, and 0 if they are equal. */
     artists.sort(function (a, b) {
         return a === b ? 0 : a > b ? -1 : 1;
     });
