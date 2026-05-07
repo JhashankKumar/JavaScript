@@ -136,12 +136,25 @@ console.log("Day 15: JavaScript Array Master Course");
     Array.isArray(arr); // true
 }
 // Array Destructuring
+/* Destructuring assignment is a JavaScript expression that allows you to unpack values from arrays,
+or properties from objects, into distinct variables. It provides a convenient way to extract data 
+from arrays and objects, making it easier to work with complex data structures. 
+The syntax for array destructuring involves using square brackets [] on the left-hand side of the 
+assignment operator (=) to specify the variables that will receive the values from the array on the 
+right-hand side. 
+The order of the variables in the destructuring assignment corresponds to the order of the elements 
+in the array. 
+You can also use default values, skip values, and even nest destructuring assignments for more 
+complex scenarios. */    
 {
     const salad = ["tomato", "mushroom", "broccoli", "cucumber", "corn", "carrot", "avocado"];
 
     const tomato = salad[0];
     const mushroom = salad[1];
     const carrot = salad[5];
+    const cucumber = salad[-3]; // undefined - negative index does not work in array indexing
+
+    console.log(tomato, mushroom, carrot, cucumber);
 }
 
 // Destructuring Assignment
@@ -378,6 +391,19 @@ The includes() method uses strict equality (===) to compare the search value wit
 }
 
 // splice()
+/* The splice() method changes the contents of an array by removing or replacing existing 
+elements and/or adding new elements in place. 
+The splice() method takes three arguments: the start index, the number of elements to remove, 
+and the elements to add (optional). 
+The start index specifies the index at which to start changing the array. 
+If the start index is negative, it will be treated as length + startIndex. 
+The deleteCount argument specifies the number of elements to remove from the array. 
+If deleteCount is not provided, it will remove all elements from the start index to the 
+end of the array. 
+The items to add are optional and can be any number of elements that you want to add to the 
+array starting from the start index. 
+The splice() method modifies the original array and returns an array containing the removed elements. 
+If no elements are removed, it returns an empty array. */ 
 {
     // splice(start, deleteCount, item, item1, item2)
 
@@ -393,6 +419,12 @@ The includes() method uses strict equality (===) to compare the search value wit
 }
 
 // at()
+/*
+The at() method takes an integer value and returns the item at that index, 
+allowing for positive and negative integers.
+Negative integers count back from the last item in the array. 
+The at() method does not modify the original array and returns undefined if the index is out of bounds. 
+*/
 {
     const junkFoodILove = ["🥖", "🍔", "🍟", "🍕", "🌭", "🥪", "🌮", "🍿"];
 
