@@ -111,5 +111,42 @@
         <li><strong>Maximum Length:</strong> <code>const arr = new Array(2 ** 32 - 1);</code> creates an array with the maximum length.</li>
         <li><strong>Exceeding Limit:</strong> <code>arr.length = 2 ** 32;</code> throws a RangeError.</li>
     </ul>
+
+    // Rest and Spread
+    <h2>Rest and Spread</h2>
+    <p>The rest operator (<code>...</code>) allows us to represent an indefinite number of elements as an array. The spread operator (<code>...</code>) allows us to expand an array into individual elements.</p>
+    <ul>
+        <li><strong>Rest:</strong> <code>const [a, ...rest] = [1, 2, 3, 4];</code> assigns 1 to a and [2, 3, 4] to rest.</li>
+        <li><strong>Spread:</strong> <code>const arr1 = [1, 2]; const arr2 = [...arr1, 3, 4];</code> creates arr2 as [1, 2, 3, 4].</li>
+    </ul>
+    
+    // concat(), join(), fill(), includes(), indexOf(), lastIndexOf(), reverse(), flat(), flatMap(), sort(), splice()
+    // examples of these methods
+    <h2>Array Methods</h2>
+    <p>JavaScript arrays come with a variety of built-in methods for manipulating and working with arrays. Some of the most commonly used methods include:</p>
+    <ul>
+        <li><strong><code>concat()</code>:</strong> Merges two or more arrays and returns a new array.</li>
+        <li><strong><code>join(separator)</code>:</strong> Joins all elements of an array into a string, separated by the specified separator.</li>
+        <li><strong><code>fill(value, start, end)</code>:</strong> Fills all elements of an array from a start index to an end index with a static value.</li>
+        <li><strong><code>includes(value)</code>:</strong> Determines whether an array includes a certain value, returning true or false.</li>
+        <li><strong><code>indexOf(value)</code>:</strong> Returns the first index at which a given element can be found in the array, or -1 if it is not present.</li>
+        <li><strong><code>lastIndexOf(value)</code>:</strong> Returns the last index at which a given element can be found in the array, or -1 if it is not present.</li>
+        <li><strong><code>reverse()</code>:</strong> Reverses the order of the elements in an array in place.</li>
+        <li><strong><code>flat(depth)</code>:</strong> Creates a new array with all sub-array elements concatenated into it up to the specified depth.</li>
+        <li><strong><code>flatMap(callback)</code>:</strong> Maps each element using a mapping function, then flattens the result into a new array.</li>
+        <li><strong><code>sort(compareFunction)</code>:</strong> Sorts the elements of an array in place and returns the sorted array.</li>
+        <li><strong><code>splice(start, deleteCount, ...items)</code>:</strong> Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</li>
+    </ul>
+
+    //about toSorted(), toReversed(), toSpliced(), with() methods
+    <h2>New Array Methods: toSorted(), toReversed(), toSpliced(), with()</h2>
+    <p>toSorted() and toReversed() and toSpliced() and with() are the new array methods that do not modify the original array but instead return a new array with the desired changes. These methods provide a more functional programming style for working with arrays, allowing you to create new arrays based on existing ones without mutating the original data.</p>
+    <ul>
+        <li><strong><code>toSorted()</code>:</strong> Returns a new array with the elements sorted in ascending order. The original array remains unchanged.</li>
+        <li><strong><code>toReversed()</code>:</strong> Returns a new array with the elements in reverse order. The original array remains unchanged.</li>
+        <li><strong><code>toSpliced(start, deleteCount, ...items)</code>:</strong> Returns a new array with the specified elements removed and/or added, without modifying the original array.</li>
+        <li><strong><code>with(index, value)</code>:</strong> Returns a new array with the element at the specified index replaced with the given value. The original array remains unchanged.</li>
+    </ul>
+</body>
 </body>
 </html>
