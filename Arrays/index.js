@@ -350,7 +350,12 @@ The includes() method uses strict equality (===) to compare the search value wit
 }
 
 // indexOf() and lastIndexOf()
-/* The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. Both methods take an optional fromIndex argument that specifies the index at which to start the search. If fromIndex is not provided, it defaults to 0 for indexOf() and to the length of the array minus one for lastIndexOf(). Both methods use strict equality (===) to compare the search value with the elements of the array. */  
+/* The indexOf() method returns the first index at which a given element can be found in the array, 
+or -1 if it is not present. The lastIndexOf() method returns the last index at which a given element 
+can be found in the array, or -1 if it is not present. Both methods take an optional fromIndex argument 
+that specifies the index at which to start the search. If fromIndex is not provided, it defaults to 0 for 
+indexOf() and to the length of the array minus one for lastIndexOf().
+Both methods use strict equality (===) to compare the search value with the elements of the array. */  
 // It will not change the existing array but instead returns a number.(immutable)
 {
     const names = ["tom", "alex", "bob", "tom"];
@@ -363,7 +368,8 @@ The includes() method uses strict equality (===) to compare the search value wit
 }
 
 // reverse()
-// The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first. The reverse() method modifies the original array and returns it.
+// The reverse() method reverses an array in place. The first array element becomes the last, 
+// and the last array element becomes the first. The reverse() method modifies the original array and returns it.
 // It will change the existing array and returns the modified array.(mutable)
 {
     const names = ["tom", "alex", "bob"];
