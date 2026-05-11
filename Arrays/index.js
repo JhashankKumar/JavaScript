@@ -350,6 +350,8 @@ The includes() method uses strict equality (===) to compare the search value wit
 }
 
 // indexOf() and lastIndexOf()
+/* The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. Both methods take an optional fromIndex argument that specifies the index at which to start the search. If fromIndex is not provided, it defaults to 0 for indexOf() and to the length of the array minus one for lastIndexOf(). Both methods use strict equality (===) to compare the search value with the elements of the array. */  
+// It will not change the existing array but instead returns a number.(immutable)
 {
     const names = ["tom", "alex", "bob", "tom"];
 
@@ -361,6 +363,8 @@ The includes() method uses strict equality (===) to compare the search value wit
 }
 
 // reverse()
+// The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first. The reverse() method modifies the original array and returns it.
+// It will change the existing array and returns the modified array.(mutable)
 {
     const names = ["tom", "alex", "bob"];
     console.log(names.reverse());
@@ -369,6 +373,7 @@ The includes() method uses strict equality (===) to compare the search value wit
 // sort()
 // The default sort() method converts the element types into strings
 //  The default sorting order is ascending.
+// It will change the existing array and returns the modified array.(mutable)
 
 {
     const names = ["tom", "alex", "bob"];
@@ -440,6 +445,7 @@ allowing for positive and negative integers.
 Negative integers count back from the last item in the array. 
 The at() method does not modify the original array and returns undefined if the index is out of bounds. 
 */
+// It will not change the existing array but instead returns the element at the specified index.(immutable)
 {
     const junkFoodILove = ["🥖", "🍔", "🍟", "🍕", "🌭", "🥪", "🌮", "🍿"];
 
@@ -457,6 +463,18 @@ The at() method does not modify the original array and returns undefined if the 
 }
 
 // copyWithin()
+/* The copyWithin() method shallow copies part of an array to another location in the same array 
+and returns it without modifying its length.
+The copyWithin() method takes three arguments: target, start, and end (optional). 
+The target argument specifies the index at which to copy the sequence of elements.
+The start argument specifies the index at which to start copying elements from.
+The end argument specifies the index at which to end copying elements from (not included). 
+If end is not provided, it defaults to the length of the array. 
+The copyWithin() method modifies the original array and returns it. 
+If the target index is greater than or equal to the length of the array, it will not copy any elements. 
+If the start index is greater than or equal to the length of the array, it will not copy any elements. 
+If the end index is greater than the length of the array, it will copy elements up to the end of the array. */ 
+// It will change the existing array and returns the modified array.(mutable)
 {
     // copyWithin(target, start, end)
 
@@ -471,6 +489,16 @@ The at() method does not modify the original array and returns undefined if the 
 }
 
 // flat()
+/* The flat() method creates a new array with all sub-array elements concatenated into it recursively 
+up to the specified depth.
+The flat() method takes an optional argument depth, which specifies the depth level to flatten the array. 
+If depth is not provided, it defaults to 1.
+The flat() method does not modify the original array and returns a new array with the sub-array 
+elements concatenated into it.
+If the depth is greater than the maximum depth of the nested arrays, it will flatten all the nested arrays.
+If the array contains non-array elements, they will be included in the new array without modification. */
+/* It will not change the existing array but instead returns a new array with the sub-array 
+elements concatenated into it.(immutable)*/
 {
     const arr1 = [0, 1, 2, [3, 4]];
     console.log(arr1.flat());
@@ -498,7 +526,12 @@ The at() method does not modify the original array and returns undefined if the 
     console.log(groupedByMoreThan5000);
 }
 
+/* toSorted() and toReversed() and toSpliced() and with() are the new array methods that do not 
+modify the original array but instead return a new array with the desired changes. */
+
 // toReversed()
+/* The toReversed() method returns a new array with the elements in reverse order. 
+The original array remains unchanged.*/
 {
     const items = [1, 2, 3];
 
@@ -509,6 +542,8 @@ The at() method does not modify the original array and returns undefined if the 
 }
 
 // toSorted()
+/* The toSorted() method returns a new array with the elements sorted in ascending order. 
+The original array remains unchanged. */
 {
     const months = ["Mar", "Jan", "Feb", "Dec"];
     const sortedMonths = months.toSorted();
@@ -518,6 +553,8 @@ The at() method does not modify the original array and returns undefined if the 
 }
 
 // toSpliced()
+/* The toSpliced() method returns a new array with the elements spliced in at the specified index. 
+The original array remains unchanged. */
 {
     const months = ["Jan", "Mar", "Apr", "May"];
 
@@ -528,6 +565,10 @@ The at() method does not modify the original array and returns undefined if the 
 }
 
 // with()
+/* The with() method returns a new array with the element at the specified index replaced with the given value. 
+The original array remains unchanged. The with() method takes two arguments: the index of the element to 
+replace and the new value to be placed at that index. If the index is out of bounds, 
+it will return a new array with the new value added at the end of the array. */
 {
     const numbers = [1, 2, 3, 4, 5];
 
