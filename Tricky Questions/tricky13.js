@@ -46,3 +46,10 @@ array.splice(start, deleteCount, item1, item2, ...)
 - item1, item2, ...: The elements to add to the array, starting at the start index. 
 If no elements are specified, splice() will only remove elements from the array.
 */
+
+num3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(num3);
+num3.splice(0)
+console.log(num3); // []
+num3.splice(0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(num3); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
