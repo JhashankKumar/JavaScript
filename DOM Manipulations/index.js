@@ -92,8 +92,8 @@ console.log("Day 18: DOM Manipulations");
 
 {
   
-    let list = document.getElementById("myList");
-    const itemToRemove = list.children[0];
+    // let list = document.getElementById("myList");
+    // const itemToRemove = list.children[0];
     // console.log(itemToRemove);
     // list.removeChild(itemToRemove);
     // console.log(list.children)
@@ -115,33 +115,34 @@ console.log("Day 18: DOM Manipulations");
 // Read, Write, and Remove Attributes
 {
   /*
-    const imageElem = document.querySelector("img")
+    const imageElem = document.querySelector("img.banner");
 
     console.log(imageElem.getAttribute('alt'))
 
-    imageElem.setAttribute("src", "banner.png");
+    imageElem.setAttribute("src", "/DOM Manipulations/Pheonix.jpg");
     imageElem.setAttribute("alt", "banner");
 
     imageElem.removeAttribute("height");
 
     imageElem.hasAttribute("src") // true
     imageElem.hasAttribute("height") // false
-    */
+  */
+    
 }
 
 // Travarsing/Navigating DOM
 
 {
   // parentElement and parentNode
-  //const span = document.getElementById("text");
-  // console.log("Parent Element", span.parentElement.parentElement);
-  // console.log("Parent Node", span.parentNode.parentNode);
+  const span = document.getElementById("text");
+  console.log("Parent Element", span.parentElement.parentElement);
+  console.log("Parent Node", span.parentNode.parentNode);
   // childern and childNodes
-  // const mainElem = document.getElementById("main-id");
-  // console.log("Children", mainElem.children);
-  // console.log("Child Node", mainElem.childNodes);
-  // console.log("First Child", mainElem.firstChild);
-  // console.log("First Child Element", mainElem.firstElementChild);
+  const mainElem = document.getElementById("main-id");
+  console.log("Children", mainElem.children);
+  console.log("Child Node", mainElem.childNodes);
+  console.log("First Child", mainElem.firstChild);
+  console.log("First Child Element", mainElem.firstElementChild);
   // nextSibling
   // nextElementSibling
   // previousSibling
