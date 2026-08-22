@@ -143,10 +143,18 @@ console.log("Day 18: DOM Manipulations");
   console.log("Child Node", mainElem.childNodes);
   console.log("First Child", mainElem.firstChild);
   console.log("First Child Element", mainElem.firstElementChild);
+
+  const h1Elem = document.getElementById("something-id");
   // nextSibling
+  console.log("Next Sibling", h1Elem.nextSibling);
   // nextElementSibling
+  console.log("Next Element Sibling", h1Elem.nextElementSibling);
+
+  const pElem = document.getElementById("something-id2");
   // previousSibling
+  console.log("Previous Sibling", pElem.previousSibling);
   // previousElementSibling
+  console.log("Previous Element Sibling", pElem.previousElementSibling);
 }
 
 // Mnaipulating Styles
