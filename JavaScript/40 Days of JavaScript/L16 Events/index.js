@@ -26,11 +26,14 @@ const myBtn2Elem = document.getElementById("myBtn2");
 myBtn2Elem.onclick = function() {
     console.log("My Button 2 Clicked");
 }
+
 // Can not add multiple
+// because it will override the previous one
 myBtn2Elem.onclick = function() {
     console.log("My Button 2 Clicked Again");
 }
-// Separating fundtion
+
+// Separating function
 myBtn2Elem.onclick = handleClick;
 myBtn2Elem.onclick = () => handleClick("Hola");
 
@@ -44,6 +47,8 @@ const handleCount = function() {
 const greetMe = function() {
     console.log("Thank You!");
 }
+
+// the below will not work because the function is anonymous and it is not the same as the one added
 /*
 counBtnElem.addEventListener("click", function() {
     console.log(counter);
@@ -56,11 +61,17 @@ counBtnElem.removeEventListener("click", function() {
 })
 */
 
+/*
+defining the function separately and then adding and removing it will work 
+because the function reference is the same as the one added but in the case of anonymous function, 
+the reference is different and hence it will not work
+*/
+
 counBtnElem.addEventListener("click", handleCount);
 counBtnElem.addEventListener("click", greetMe);
 counBtnElem.removeEventListener("click", handleCount);
 
-// DOM Conetnt Loaded
+// DOM Content Loaded
 
 // will never run
 document.onDOMContentLoaded = function() {
@@ -82,8 +93,11 @@ function handleChange(event) {
     console.log("Target Value:", event.target.value);
     console.log("Event Type:", event.type);
     console.log("Current Target:", event.currentTarget);
+
+    // this will refer to the element that the event is attached to
     console.log("this:", this);
 }
 searchElem.addEventListener("change", handleChange);
+
 
 
