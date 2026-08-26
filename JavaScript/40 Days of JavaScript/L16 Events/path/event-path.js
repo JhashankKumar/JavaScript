@@ -90,13 +90,16 @@ newItemElem.textContent = "Item 3";
 document.getElementById("itemList").appendChild(newItemElem);
 
 
-// event.stopPropagation() - event.stopPropagation() is a method used inside an event handler to stop the event from bubbling up (or propagating further) through the DOM tree
+/* 
+event.stopPropagation() - event.stopPropagation() is a method used inside an event handler 
+to stop the event from bubbling up (or propagating further) through the DOM tree
+*/
 
-document.getElementById("parent").addEventListener("click", () => {
+document.getElementById("father").addEventListener("click", () => {
     console.log("Parent clicked");
 });
 
-document.getElementById("child").addEventListener("click", (e) => {
+document.getElementById("son").addEventListener("click", (e) => {
     // e.stopPropagation();
     console.log("Child clicked");
 });
