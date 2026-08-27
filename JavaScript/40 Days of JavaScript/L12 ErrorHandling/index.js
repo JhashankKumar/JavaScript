@@ -11,7 +11,6 @@ console.log("Day 14: Error Handling");
 // 7. Creating Custom Error
 // 8. Self Assignment Operator
 
-
 // parsing error -
 // runtime error -
 
@@ -35,9 +34,9 @@ console.log("Day 14: Error Handling");
 // try...catch
 
 try {
-    // logic or code
+  // logic or code
 } catch (err) {
-    // handle error
+  // handle error
 }
 
 /*
@@ -50,52 +49,52 @@ try {
 */
 
 try {
-    console.log("execution starts here");
-    abc; // ReferenceError: abc is not defined
-    console.log("execution ends here");
+  console.log("execution starts here");
+  abc; // ReferenceError: abc is not defined
+  console.log("execution ends here");
 } catch (err) {
-    console.error("An Error has occured");
+  console.error("An Error has occured");
 
-    // Error object has three important properties: name, message and stack
-    // name - type of error
-    // message - details about the error
-    // stack - stack trace of the error
-    console.log(err.name)
-    console.log(err.message)
-    console.log(err.stack)
+  // Error object has three important properties: name, message and stack
+  // name - type of error
+  // message - details about the error
+  // stack - stack trace of the error
+  console.log(err.name);
+  console.log(err.message);
+  console.log(err.stack);
 }
 
 // Real-World Use Cases
 // 1. Handling Math Errors
 function divideNumbers(a, b) {
-    try {
-        if (b === 0) {
-            const err = new Error("Division by zero is not allowed.");
-            throw err;
-        }
-        const result = a/b;
-        console.log(`The result is ${result}`);
-    } catch(error) {
-        console.error("Got a Math Error:", error.message)
+  try {
+    if (b === 0) {
+      const err = new Error("Division by zero is not allowed.");
+      throw err;
     }
+    const result = a / b;
+    console.log(`The result is ${result}`);
+  } catch (error) {
+    console.error("Got a Math Error:", error.message);
+  }
 }
 divideNumbers(15, 3);
 // divideNumbers(15, 0);
 
 // 2. Handling Property Access Errors
 const person = {
-    name: "Tapas",
-    address: {
-        city: "Bangalore"
-    }
-}
+  name: "Tapas",
+  address: {
+    city: "Bangalore",
+  },
+};
 
 function getPostalCode(user) {
-    try {
-        console.log(user.address.country.postalCode);
-    } catch (error) {
-        console.error("Error accessing property:", error.message);
-    }
+  try {
+    console.log(user.address.country.postalCode);
+  } catch (error) {
+    console.error("Error accessing property:", error.message);
+  }
 }
 
 // getPostalCode(person); // TypeError: Cannot read properties of undefined (reading 'postalCode')
@@ -105,12 +104,12 @@ const jsonString = '{"name": "Tapas", "age": 30}'; // valid JSON
 const invalidJsonString = '{"name": "Tapas", "age": 30'; // invalid JSON
 
 function parseUserData(json) {
-    try {
-        const userData = JSON.parse(json);
-        console.log("User Data:", userData);
-    } catch (error) {
-        console.error("JSON Parsing Error:", error.message);
-    }
+  try {
+    const userData = JSON.parse(json);
+    console.log("User Data:", userData);
+  } catch (error) {
+    console.error("JSON Parsing Error:", error.message);
+  }
 }
 
 // parseUserData(jsonString);
@@ -119,14 +118,16 @@ function parseUserData(json) {
 // Throwing Error - we can create our own error and throw it when a certain condition is met.
 // throw keyword is used to throw an error. It can be used to throw built-in errors or custom errors.
 function validateAge(age) {
-    try {
-        if (isNaN(age)) {
-            throw new Error(`Invalid input: Age must be a number. Your input is ${age}`);
-        }
-        console.log(`User's age is: ${age}`);
-    } catch (error) {
-        console.error("Validation Error:", error.message);
+  try {
+    if (isNaN(age)) {
+      throw new Error(
+        `Invalid input: Age must be a number. Your input is ${age}`,
+      );
     }
+    console.log(`User's age is: ${age}`);
+  } catch (error) {
+    console.error("Validation Error:", error.message);
+  }
 }
 
 // validateAge("Tapas")
@@ -134,74 +135,73 @@ function validateAge(age) {
 // Rethrow
 
 try {
-    // Do something with logic and code
+  // Do something with logic and code
 } catch (error) {
-    // Do something with the error
+  // Do something with the error
 }
 
 function validateForm(formData) {
-    try {
-        if (!formData.username) throw new Error("Username is Mandatory");
-        if (!formData.email.includes("@")) throw new Error("Invalid email format!");
-    } catch (error) {
-        console.error("Validation Issues Found:", error.message);
-        throw error; // rethrow
-    }
+  try {
+    if (!formData.username) throw new Error("Username is Mandatory");
+    if (!formData.email.includes("@")) throw new Error("Invalid email format!");
+  } catch (error) {
+    console.error("Validation Issues Found:", error.message);
+    throw error; // rethrow
+  }
 }
 
 try {
-    validateForm({ username: "Tapas", email: "bademail" })
-} catch(error) {
-    console.error("Showing error message for user creation", error.message)
+  validateForm({ username: "Tapas", email: "bademail" });
+} catch (error) {
+  console.error("Showing error message for user creation", error.message);
 }
 
 // try-catch-finally
 
 try {
-    // Code that may throw an error
+  // Code that may throw an error
 } catch (error) {
-    // Code to handle the error
+  // Code to handle the error
 } finally {
-    // Code that always runs (cleanup actions)
+  // Code that always runs (cleanup actions)
 }
 
 function processInformation(information) {
-    try {
-        console.log("Processing Information...");
-        if (!information) throw new Error("No Information available to process");
-        console.log("Information processed");
-    } catch (error) {
-        console.log("Error:", error.message);
-    } finally {
-        console.log("Cleanup: Closing database connection")
-    }
+  try {
+    console.log("Processing Information...");
+    if (!information) throw new Error("No Information available to process");
+    console.log("Information processed");
+  } catch (error) {
+    console.log("Error:", error.message);
+  } finally {
+    console.log("Cleanup: Closing database connection");
+  }
 }
 
 // processInformation();
 
-
 // Custom Error
 
 function ValidationError(message) {
-    this.name = "ValidationError";
-    this.message = message;
-    this.stack = new Error().stack;
+  this.name = "ValidationError";
+  this.message = message;
+  this.stack = new Error().stack;
 }
 
 ValidationError.prototype = Object.create(Error.prototype);
 
 function validateCitizen(age) {
-    if (age < 60) {
-        throw new ValidationError("You are not a senior citizen");
-    }
-    return "You are a senior citizen";
+  if (age < 60) {
+    throw new ValidationError("You are not a senior citizen");
+  }
+  return "You are a senior citizen";
 }
 
 try {
-    const message = validateCitizen(15);
-    console.log(message);
+  const message = validateCitizen(15);
+  console.log(message);
 } catch (error) {
-    console.error(`${error.name}: ${error.message}`)
+  console.error(`${error.name}: ${error.message}`);
 }
 
 // Self Assignment Operator ?=
